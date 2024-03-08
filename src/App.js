@@ -39,13 +39,14 @@ function App() {
     styles: TableStyles,
     pagination: {
       itemsPerPage: 5
-    }
+    },
+    title:"User Information"
   };
 
   return (
     <div className="App">
       <Suspense fallback={<div>Loading...</div>}>
-        <Table columns={columns} data={users} config={config} />
+        <Table  columns={columns} data={users} config={config} />
       </Suspense>
     </div>
   );
