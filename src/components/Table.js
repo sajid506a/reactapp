@@ -8,7 +8,6 @@ import TableCell from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
 import TablePagination from '@mui/material/TablePagination';
 import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
 import { sortData } from './sortUtils';
 import ContextMenuComponent from './ContextMenuComponent';
 
@@ -63,8 +62,6 @@ const TableComponent = ({ columns, data, config }) => {
 
   return (
     <Paper>
-      {selectedRow !== null && <div style={{ padding: '10px', backgroundColor: '#eee' }}>Actions for selected row</div>}
-      {config.title && <Typography variant="h4" style={{ padding: '16px' }}>{config.title}</Typography>}
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
